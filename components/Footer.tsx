@@ -10,11 +10,11 @@ export default function Footer() {
     >
       <div className="max-w-[1760px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-3">
         <div className="flex items-center gap-3 justify-start md:justify-self-start">
-          <span className="font-display font-bold text-2xl" style={{ color: "var(--footer-text)" }}>PR</span>
-          <span className="font-mono text-base" style={{ color: "color-mix(in srgb, var(--footer-text) 65%, transparent)" }}>&middot;</span>
-          <span className="font-mono text-lg" style={{ color: "color-mix(in srgb, var(--footer-text) 78%, transparent)" }}>Parinith Reddy</span>
+          <span className="footer-brand-mark font-display font-bold text-2xl" style={{ color: "var(--footer-text)" }}>PR</span>
+          <span className="footer-brand-dot font-mono text-base" style={{ color: "color-mix(in srgb, var(--footer-text) 65%, transparent)" }}>&middot;</span>
+          <span className="footer-meta font-mono text-lg" style={{ color: "color-mix(in srgb, var(--footer-text) 78%, transparent)" }}>Parinith Reddy</span>
         </div>
-        <p className="font-mono text-lg text-center justify-self-center" style={{ color: "color-mix(in srgb, var(--footer-text) 78%, transparent)" }}>
+        <p className="footer-meta font-mono text-lg text-center justify-self-center" style={{ color: "color-mix(in srgb, var(--footer-text) 78%, transparent)" }}>
           Developed by Parinith Reddy
         </p>
         <div className="flex items-center gap-4 justify-start md:justify-self-end">
@@ -28,7 +28,7 @@ export default function Footer() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors font-mono text-lg"
+              className="footer-meta transition-colors font-mono text-lg"
               style={{ color: "color-mix(in srgb, var(--footer-text) 78%, transparent)" }}
             >
               {label}
@@ -36,7 +36,7 @@ export default function Footer() {
           ))}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center gap-1.5 transition-colors font-mono text-lg group"
+            className="footer-meta flex items-center gap-1.5 transition-colors font-mono text-lg group"
             style={{ color: "color-mix(in srgb, var(--footer-text) 78%, transparent)" }}
             aria-label="Back to top"
           >

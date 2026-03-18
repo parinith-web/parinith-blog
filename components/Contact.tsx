@@ -50,7 +50,11 @@ export default function Contact() {
   const inView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   return (
-    <section ref={sectionRef} id="contact-section" className="relative py-32 px-6 overflow-hidden">
+    <section
+      ref={sectionRef}
+      id="contact-section"
+      className="relative min-h-[calc(100vh-4.5rem)] scroll-mt-[4.5rem] px-6 py-20 overflow-hidden flex items-center"
+    >
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="absolute left-[10%] bottom-[10%] w-[28rem] h-[28rem] rounded-full opacity-10"
@@ -65,9 +69,9 @@ export default function Contact() {
         />
       </div>
 
-      <div className="max-w-[1720px] mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-0 items-end">
-          <div className="max-w-4xl pl-4 lg:pl-12 xl:pl-20">
+      <div className="w-full max-w-[1660px] mx-auto relative z-10 lg:-translate-y-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-10 lg:gap-0 items-end">
+          <div className="max-w-4xl pl-2 lg:pl-8 xl:pl-12">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -147,7 +151,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 20, y: 20 }}
             animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="relative hidden lg:flex justify-end items-end min-h-[38rem] xl:min-h-[42rem] pointer-events-none"
+            className="relative hidden lg:flex justify-center xl:justify-end items-end min-h-[38rem] xl:min-h-[42rem] xl:pr-6 pointer-events-none"
           >
             <div className="absolute bottom-10 right-8 xl:right-16 w-[26rem] h-[26rem] xl:w-[32rem] xl:h-[32rem] rounded-full bg-[#5b8fd9]/18 blur-[110px]" />
             <div className="relative w-[31rem] h-[31rem] xl:w-[37.5rem] xl:h-[37.5rem] -mr-4 xl:mr-0 -mb-2">

@@ -1,0 +1,14 @@
+
+> parinith-portfolio@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 14.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 12s (1099 modules)
+ GET / 200 in 13474ms
+ ✓ Compiled in 1393ms (551 modules)
+ GET / 200 in 200ms

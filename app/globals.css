@@ -601,3 +601,26 @@ html[data-theme="light"] .hover\:border-white\/15:hover {
 }
 .skill-card:hover   { transform: translateY(-4px) scale(1.02); }
 .project-card:hover { transform: translateY(-8px); }
+
+/* Dark theme footer override */
+html[data-theme="dark"] footer#contact {
+  background: linear-gradient(90deg, rgba(14, 14, 16, 0.98) 0%, rgba(24, 24, 28, 0.98) 50%, rgba(14, 14, 16, 0.98) 100%) !important;
+  border-top-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 -12px 36px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="dark"] footer#contact {
+  --footer-text: #c1c7d0;
+}
+
+html[data-theme="dark"] footer#contact .footer-brand-mark {
+  font-size: 1.7rem;
+}
+
+html[data-theme="dark"] footer#contact .footer-meta {
+  font-size: 1.1rem;
+}
+
+html[data-theme="dark"] footer#contact .footer-brand-dot {
+  color: color-mix(in srgb, var(--footer-text) 55%, transparent) !important;
+}
